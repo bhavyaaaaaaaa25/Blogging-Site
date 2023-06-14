@@ -1,0 +1,15 @@
+<%- include('./partials/header'); -%>
+<title>Compose Page</title>
+<h1  style = "color: rgb(63, 129, 169);">COMPOSE</h1>
+
+<form action="/compose" method="POST">
+  <div class="form-group">
+    <label>Title</label>
+    <input class="form-control" type="text" name="compose" autofocus autocomplete="off"/>
+    <label>Post</label>
+    <textarea class="form-control" name="post" rows="5" cols="30" autocomplete="off"></textarea>
+  </div>
+  <br>
+  <button type="submit" class="btn btn-primary" name="button">Post</button>
+</form>
+<%- include('./partials/footer'); -%>

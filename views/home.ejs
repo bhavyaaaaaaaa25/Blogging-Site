@@ -1,0 +1,10 @@
+<%- include('./partials/header'); -%>
+<title>Home Page</title>
+<h1 style = "color: rgb(63, 129, 169);">HOME</h1><br>
+<p style="font-size: medium; font-family:cursive;"><%= homeStartingContent %></p>
+<br><br><br>
+
+<% posts.forEach(function(post){ %>
+<h1 style = "color: rgb(169, 63, 63);"><%= post.title %></h1>
+<p style="font-size: medium; font-family:cursive;"><%= post.body.substring(0,100) + "..."%><a href="/posts/<%=post.title%>">Read more</a></p>
+<% }); %> <%- include('./partials/footer'); -%>
